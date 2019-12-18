@@ -9,7 +9,7 @@ public class Operations{
         while(listIterator.hasNext())
         {
             ToDoList temp = (ToDoList)listIterator.next();
-            System.out.print(temp + "\n");
+            System.out.println(temp);
         }
     }
 
@@ -18,5 +18,13 @@ public class Operations{
         myToDoList.add(new ToDoList(id, description));
         message += "Success.";
         return message;
+    }
+
+    public static void displayMenu(){
+        System.out.println("Enter the corresponding number from the menu: ");
+        System.out.println("1. Add Task");
+        System.out.println("2. Update Task");
+        System.out.println("3. Delete Task");
+        System.out.println("4. Exit");
     }
 }

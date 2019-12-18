@@ -5,21 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(final String[] args) {
-        System.out.println("Initializing...");
-        final ArrayList<ToDoList> myToDoList = new ArrayList<ToDoList>();
-        System.out.println("Initialized.");
-        myToDoList.add(new ToDoList(ToDoList.index++, "Mail GirishSir"));
-        Scanner input = new Scanner(System.in);
-        try{
+        final ArrayList<ToDoList> myToDoList = new ArrayList<ToDoList>();   
+        try(Scanner input = new Scanner(System.in)){
             while (true) {
                 // displayToDoListFunction
                 Operations.displayList(myToDoList);
-                System.out.println("Enter the corresponding number from the menu: ");
-                System.out.println("1. Add Task");
-                System.out.println("2. Update Task");
-                System.out.println("3. Delete Task");
-                System.out.println("4. Exit");
-
+                Operations.displayMenu();
                 int choice = input.nextInt();
                 input.nextLine();
                 switch(choice)
@@ -32,8 +23,6 @@ public class Main {
                     case 4: System.exit(0);
                 }
             }
-    }finally{
-        input.close();
     }
     }
 }
