@@ -9,9 +9,7 @@ public class ToDoList{
         this.id = id;
         this.description = description;
     }
-
     
-
     public int getId() {
         return id;
     }

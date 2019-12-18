@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class Operations{
     public static void displayList(ArrayList<ToDoList> myToDoList){
-        Iterator listIterator = myToDoList.iterator();
+        Iterator<ToDoList> listIterator = myToDoList.iterator();
         while(listIterator.hasNext())
         {
             ToDoList temp = (ToDoList)listIterator.next();
