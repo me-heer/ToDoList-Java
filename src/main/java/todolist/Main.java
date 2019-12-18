@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Initializing...");
         final ArrayList<ToDoList> myToDoList = new ArrayList<ToDoList>();
         System.out.println("Initialized.");
-        myToDoList.add(new ToDoList(myToDoList.index++, "Mail GirishSir"));
+        myToDoList.add(new ToDoList(ToDoList.index++, "Mail GirishSir"));
         Scanner input = new Scanner(System.in);
         while (true) {
             // displayToDoListFunction
@@ -26,7 +26,7 @@ public class Main {
                 case 1:
                     System.out.println("Enter the task: ");
                     String description = input.nextLine();
-                    System.out.println(Operations.addTask(myToDoList, myToDoList.index++, description));
+                    System.out.println(Operations.addTask(myToDoList, ToDoList.index++, description));
                     break;
                 case 4: System.exit(0);
             }
