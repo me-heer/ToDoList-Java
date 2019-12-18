@@ -1,1 +1,1 @@
-ToDoList-Java
+ToDoList-Java [![Build Status](https://travis-ci.com/mformihir/ToDoList-Java.svg?branch=master)](https://travis-ci.com/mformihir/ToDoList-Java) [![codecov](https://codecov.io/gh/mformihir/ToDoList-Java/branch/master/graph/badge.svg)](https://codecov.io/gh/mformihir/ToDoList-Java)
