@@ -14,8 +14,9 @@ public class OperationsTest{
     public void addTaskTest(){
         ArrayList<ToDoList> testToDo = new ArrayList<ToDoList>();
         assertEquals(0, testToDo.size());
-        Operations.addTask(testToDo, 1, "Test message");
+        String result = Operations.addTask(testToDo, 1, "Test message");
         assertEquals(1, testToDo.size());
+        assertEquals("Success.", result);
     }
 
     @Test

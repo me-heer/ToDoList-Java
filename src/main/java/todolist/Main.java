@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(final String[] args) {
-        final ArrayList<ToDoList> myToDoList = new ArrayList<ToDoList>();   
+    public static void main(String[] args) {
+        ArrayList<ToDoList> myToDoList = new ArrayList<ToDoList>();   
         try(Scanner input = new Scanner(System.in)){
             while (true) {
                 // displayToDoListFunction

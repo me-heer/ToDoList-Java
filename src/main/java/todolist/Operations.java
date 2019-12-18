@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Operations{
+
     public static void displayList(ArrayList<ToDoList> myToDoList){
         Iterator<ToDoList> listIterator = myToDoList.iterator();
         while(listIterator.hasNext())
