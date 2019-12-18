@@ -20,6 +20,7 @@ public class OperationsTest{
 
     @Test
     public void displayTaskTestWin(){
+        Assume.assumeTrue(System.getProperty("os.name").toLowerCase().startsWith("win"));
         ArrayList<ToDoList> testToDo = new ArrayList<ToDoList>();
         Operations.addTask(testToDo, 1, "Test message");
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
