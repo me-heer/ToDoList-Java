@@ -9,7 +9,7 @@ public class Operations{
         while(listIterator.hasNext())
         {
             ToDoList temp = (ToDoList)listIterator.next();
-            System.out.println(temp);
+            System.out.print(temp + "\n");
         }
     }
 

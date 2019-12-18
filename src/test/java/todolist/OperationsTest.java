@@ -24,7 +24,7 @@ public class OperationsTest{
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
         Operations.displayList(testToDo);
-        String expectedOutput = "1. Test message\r\n";
+        String expectedOutput = "1. Test message\n";
         assertEquals(expectedOutput, outContent.toString());
     }
 }
