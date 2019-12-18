@@ -3,6 +3,7 @@ package todolist;
 import java.util.*;
     
 public class ToDoList{
+    public int index = 1;
     private int id;
     private String description;
 

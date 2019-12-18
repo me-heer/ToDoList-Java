@@ -12,4 +12,11 @@ public class Operations{
             System.out.println(temp);
         }
     }
+
+    public static String addTask(ArrayList<ToDoList> myToDoList, int id, String description){
+        String message = "";
+        myToDoList.add(new ToDoList(id, description));
+        message += "Success.";
+        return message;
+    }
 }
